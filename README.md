@@ -1,53 +1,47 @@
-Reaction Speed Tester
+📌 Reaction Speed Tester
 
+A simple web-based reaction game that measures how fast you can click when the screen turns green.
 
-A lightweight, open‑source web application that measures human reaction time with high accuracy.  
-Designed for simplicity, accessibility, and extensibility — ideal for students, developers, and UX researchers.
+🚀 Demo
 
-## 🚀 Features
-- ⚡ Real‑time reaction speed measurement  
-- 🎨 Clean and responsive UI  
-- 🌙 Dark Mode (toggle)  
-- 📊 Reaction history tracking  
-- 🧩 Difficulty levels (Easy / Normal / Hard)  
-- 🔊 Optional sound cue  
-- 📈 Average reaction time calculation  
-- 🔁 Restart & replay functionality  
+Open index.html in your browser and start playing instantly.
 
+🎮 How it works
+The box starts as red
+You wait until it turns green
+You click as fast as possible
+Your reaction time is shown in milliseconds (ms)
+📁 Project Structure
+reaction-speed-tester/
+│
+├── index.html
+├── style.css
+└── script.js
+🧠 Features
+Random delay before green signal
+Reaction time measurement in milliseconds
+“Too early” detection if you click too soon
+Simple and clean UI
+Lightweight (no frameworks)
+🛠️ Built With
+HTML5
+CSS3
+Vanilla JavaScript
+▶️ How to Run
+Download or clone the repository
+Make sure all files are in the same folder
+Open index.html in any browser (Chrome recommended)
+Start testing your reaction speed
+💡 Future Improvements (Roadmap)
+High score system
+Mobile optimization
+Multiple difficulty levels
+Leaderboard
+Sound effects
+Animations & better UI
+👤 Author
 
-## 🛠️ Tech Stack
-- **HTML5**
-- **CSS3**
-- **JavaScript (Vanilla)**
+Created by nik462
+📄 License
 
-No frameworks — fully lightweight and easy to modify.
-
-## 📦 Installation
-2. Open `index.html` in any browser.
-
-No build tools, no dependencies.
-
-## 🧪 How It Works
-1. The screen turns green after a random delay.  
-2. You click as fast as possible.  
-3. The app measures your reaction time in milliseconds.  
-4. Your results are stored locally and displayed in a history table.  
-
-## 🗺️ Roadmap
-- [ ] Online leaderboard  
-- [ ] Mobile vibration feedback  
-- [ ] Accessibility improvements (WCAG)  
-- [ ] Export results to CSV  
-- [ ] Multiplayer reaction duel mode  
-
-## 🤝 Contributing
-Contributions are welcome.  
-Feel free to open issues or submit pull requests.
-
-## 📄 License
-This project is licensed under the **MIT License**.  
-You are free to use, modify, and distribute it.
-
-## ⭐ Support
-If you find this project useful, consider starring the repo.  
-It helps visibility and encourages further development.
+This project is open source and free to use.
