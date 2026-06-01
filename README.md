@@ -1,4 +1,3 @@
-<img width="648" height="564" alt="Screenshot 2026-06-01 030800" src="https://github.com/user-attachments/assets/70f2de51-29d1-4cc5-bf67-ecf947e3d567" />
 📌 Reaction Speed Tester
 
 A simple web-based reaction game that measures how fast you can click when the screen turns green.
@@ -33,4 +32,8 @@ Speed up development and make the project more useful for the open‑source comm
 
 Created by nik462 📄 License
 
-This project is open source and free to use.
+Licensed under the MIT License.
+You are free to use, modify, and distribute this project.
+Made with HTML/CSS/JS
+
+<img width="626" height="569" alt="Screenshot 2026-06-01 030750" src="https://github.com/user-attachments/assets/2118a9ef-3e23-4944-92f1-fa5b1a4a953f" />
