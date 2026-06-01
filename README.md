@@ -17,6 +17,8 @@ Open index.html in your browser and start playing instantly.
 - v2.0.0 → best score system
 - v3.0.0 → full upgrade (current)
 
+How ChatGPT Pro will help this project
+
 Created by nik462 📄 License
 
 This project is open source and free to use.
