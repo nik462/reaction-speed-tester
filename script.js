@@ -1,32 +1,48 @@
 const box = document.getElementById("box");
-const result = document.getElementById("result");
-const bestDisplay = document.getElementById("best");
-const restartBtn = document.getElementById("restart");
+const current = document.getElementById("current");
+const bestEl = document.getElementById("best");
+const avgEl = document.getElementById("avg");
+const attemptsEl = document.getElementById("attempts");
+const restart = document.getElementById("restart");
 
 let startTime;
 let timeout;
 let ready = false;
 
+let times = [];
+let round = 0;
+const maxRounds = 5;
+
 let best = localStorage.getItem("best") || null;
 
-function updateBest() {
-    if (best) {
-        bestDisplay.textContent = "Best: " + best + " ms";
-    } else {
-        bestDisplay.textContent = "Best: -";
-    }
+function updateStats() {
+    let avg = times.length
+        ? Math.round(times.reduce((a, b) => a + b) / times.length)
+        : 0;
+
+    current.textContent = "Current: -";
+    bestEl.textContent = "Best: " + (best ? best + " ms" : "-");
+    avgEl.textContent = "Average: " + (times.length ? avg + " ms" : "-");
+    attemptsEl.textContent = `Attempts: ${round} / ${maxRounds}`;
 }
 
 function startGame() {
+    if (round >= maxRounds) {
+        box.textContent = "Finished!";
+        return;
+    }
+
     ready = false;
     box.style.background = "red";
     box.textContent = "Wait...";
+    box.classList.remove("active");
 
     let delay = Math.random() * 3000 + 1000;
 
     timeout = setTimeout(() => {
         box.style.background = "green";
         box.textContent = "CLICK!";
+        box.classList.add("active");
         startTime = Date.now();
         ready = true;
     }, delay);
@@ -34,28 +50,34 @@ function startGame() {
 
 box.addEventListener("click", () => {
     if (!ready) {
-        result.textContent = "Too early!";
+        box.textContent = "Too early!";
         clearTimeout(timeout);
-        setTimeout(startGame, 1500);
+        setTimeout(startGame, 1000);
         return;
     }
 
     let reaction = Date.now() - startTime;
-    result.textContent = "Time: " + reaction + " ms";
+    times.push(reaction);
+    round++;
+
+    current.textContent = "Current: " + reaction + " ms";
 
     if (!best || reaction < best) {
         best = reaction;
         localStorage.setItem("best", best);
-        updateBest();
     }
 
-    setTimeout(startGame, 2000);
+    updateStats();
+
+    setTimeout(startGame, 1000);
 });
 
-restartBtn.addEventListener("click", () => {
-    result.textContent = "";
+restart.addEventListener("click", () => {
+    times = [];
+    round = 0;
+    updateStats();
     startGame();
 });
 
-updateBest();
+updateStats();
 startGame();
