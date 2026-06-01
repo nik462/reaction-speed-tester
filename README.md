@@ -8,6 +8,15 @@ Open index.html in your browser and start playing instantly.
 
 🎮 How it works The box starts as red You wait until it turns green You click as fast as possible Your reaction time is shown in milliseconds (ms) 📁 Project Structure reaction-speed-tester/ │ ├── index.html ├── style.css └── script.js 🧠 Features Random delay before green signal Reaction time measurement in milliseconds “Too early” detection if you click too soon Simple and clean UI Lightweight (no frameworks) 🛠️ Built With HTML5 CSS3 Vanilla JavaScript ▶️ How to Run Download or clone the repository Make sure all files are in the same folder Open index.html in any browser (Chrome recommended) Start testing your reaction speed 💡 Future Improvements (Roadmap) High score system Mobile optimization Multiple difficulty levels Leaderboard Sound effects Animations & better UI 👤 Author
 
+
+## 🌐 Live Demo
+[https://nik462.github.io/reaction-speed-tester](https://nik462.github.io/reaction-speed-tester/)
+
+## 📦 Versions
+- v1.0.0 → initial version
+- v2.0.0 → best score system
+- v3.0.0 → full upgrade (current)
+
 Created by nik462 📄 License
 
 This project is open source and free to use.
