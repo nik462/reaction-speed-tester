@@ -29,11 +29,10 @@ Assist with writing tests and improving reliability
 
 Speed up development and make the project more useful for the open‑source community
 
-
-Created by nik462 📄 License
-
 Licensed under the MIT License.
 You are free to use, modify, and distribute this project.
 Made with HTML/CSS/JS
+
+Created by nik462 📄 License
 
 <img width="626" height="569" alt="Screenshot 2026-06-01 030750" src="https://github.com/user-attachments/assets/2118a9ef-3e23-4944-92f1-fa5b1a4a953f" />
