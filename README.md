@@ -19,6 +19,16 @@ Open index.html in your browser and start playing instantly.
 
 How ChatGPT Pro will help this project
 
+Improve code quality through refactoring and best‑practice suggestions
+
+Help design and implement new features (difficulty modes, statistics, UI improvements)
+
+Generate documentation, tutorials, and educational explanations for beginners
+
+Assist with writing tests and improving reliability
+
+Speed up development and make the project more useful for the open‑source community
+
 Created by nik462 📄 License
 
 This project is open source and free to use.
